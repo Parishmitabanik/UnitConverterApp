@@ -151,6 +151,26 @@ fun UnitConverter(){
                         conversion.value = 0.3048
                         convertUnits()
                     })
+                    DropdownMenuItem(text = { Text(text = "Inches") }, onClick = {
+                        iExpanded = false
+                        inputUnit = "Inches"
+                        conversion.value = 0.0254
+                        convertUnits()
+                    })
+
+                    DropdownMenuItem(text = { Text(text = "Kilometers") }, onClick = {
+                        iExpanded = false
+                        inputUnit = "Kilometers"
+                        conversion.value = 1000.0
+                        convertUnits()
+                    })
+
+                    DropdownMenuItem(text = { Text(text = "Yards") }, onClick = {
+                        iExpanded = false
+                        inputUnit = "Yards"
+                        conversion.value = 0.9144
+                        convertUnits()
+                    })
 
                 }
             }
@@ -187,6 +207,26 @@ fun UnitConverter(){
                         oExpanded = false
                         outputUnit = "Feet"
                         oconversion.value = 0.3048
+                        convertUnits()
+                    })
+                    DropdownMenuItem(text = { Text(text = "Inches") }, onClick = {
+                        oExpanded = false
+                        outputUnit = "Inches"
+                        oconversion.value = 0.0254
+                        convertUnits()
+                    })
+
+                    DropdownMenuItem(text = { Text(text = "Kilometers") }, onClick = {
+                        oExpanded = false
+                        outputUnit = "Kilometers"
+                        oconversion.value = 1000.0
+                        convertUnits()
+                    })
+
+                    DropdownMenuItem(text = { Text(text = "Yards") }, onClick = {
+                        oExpanded = false
+                        outputUnit = "Yards"
+                        oconversion.value = 0.9144
                         convertUnits()
                     })
                 }
